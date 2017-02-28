@@ -56,7 +56,8 @@ def genera_instancia_tripleSAT(numLineas,numVariables,numInstancia,cnf,true):
     'con numLineas clausulas y nuVariables variables distintas'
     assign=open("asignacion_tripleSAT"+str(numInstancia)+".txt",'w')    
     A=set(['x'+str(v) for v in sample(range(1,numVariables+1),randint(1,numVariables))])
-    print('\n'.join(list(A)),file=assign)    instance=open("instancia_tripleSAT"+str(numInstancia)+".txt",'w')
+    print('\n'.join(list(A)),file=assign)    
+    instance=open("instancia_tripleSAT"+str(numInstancia)+".txt",'w')
     if cnf and true: #todas las clausulas deben ser verdaderas
         clausulas=[clausulaTrueCNF(numVariables,A) for i in range(numLineas)]
     elif cnf and not true:#al menos una clausula es falsa
