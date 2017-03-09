@@ -1,3 +1,5 @@
+"""Estructura para grafo"""
+
 class SubE:
     def __init__(self,info_subE):
         [self.id,self.x,self.y,self.on,self.power]=[int(m) for m in info_subE]
