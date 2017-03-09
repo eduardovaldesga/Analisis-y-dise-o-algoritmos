@@ -1,3 +1,6 @@
+"""laberintoDFS"""
+
+
 from random import shuffle,sample
 from math import log
     
