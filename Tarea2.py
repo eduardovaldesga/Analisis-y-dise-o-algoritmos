@@ -1,4 +1,6 @@
 """
+Generador de instancias
+
 Restricciones de las instancias:
     Al menos una subestación está disponible
     Un arco disponible une dos nodos(o subE) disponibles
