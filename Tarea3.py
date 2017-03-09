@@ -1,3 +1,5 @@
+"""Algoritmo Genetico para tripleSAT"""
+
 
 def sample_wr(population, k):
     "Chooses k random elements (with replacement) from a population"
