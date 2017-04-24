@@ -1,0 +1,70 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes}
+\begin{document}
+\begin{tikzpicture}[node distance = 0.5cm,inner sep = 2pt,scale=5] 
+
+\draw[step=0.1,lightgray] (0,0) grid (1,1);
+
+\draw (0.697316,0.706619) node (p11) {};
+\draw (0.251132,0.116890) node (p21) {};
+ 
+\draw
+(p11) edge (p21);
+
+\draw (0.404902,0.556892) node (p12) {};
+\draw (0.318783,0.562031) node (p22) {};
+ 
+\draw
+(p12) edge (p22);
+
+\draw (0.686037,0.729886) node (p13) {};
+\draw (0.858848,0.183783) node (p23) {};
+ 
+\draw
+(p13) edge (p23);
+
+\draw (0.088613,0.502254) node (p14) {};
+\draw (0.054724,0.582995) node (p24) {};
+ 
+\draw
+(p14) edge (p24);
+
+\draw (0.750317,0.900081) node (p15) {};
+\draw (0.008171,0.561068) node (p25) {};
+ 
+\draw
+(p15) edge (p25);
+
+\draw (0.808669,0.167106) node (p16) {};
+\draw (0.997649,0.445746) node (p26) {};
+ 
+\draw
+(p16) edge (p26);
+
+\draw (0.282259,0.116037) node (p17) {};
+\draw (0.521250,0.898219) node (p27) {};
+ 
+\draw
+(p17) edge (p27);
+
+\draw (0.094771,0.948052) node (p18) {};
+\draw (0.630515,0.975088) node (p28) {};
+ 
+\draw
+(p18) edge (p28);
+
+\draw (0.187612,0.701618) node (p19) {};
+\draw (0.602078,0.167256) node (p29) {};
+ 
+\draw
+(p19) edge (p29);
+
+\draw (0.010524,0.531561) node (p110) {};
+\draw (0.654439,0.081577) node (p210) {};
+ 
+\draw
+(p110) edge (p210);
+
+\end{tikzpicture}
+\end{document}
