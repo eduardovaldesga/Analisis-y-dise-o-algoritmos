@@ -1,0 +1,268 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\begin{document}
+\begin{tikzpicture}[node distance = 0.5cm,inner sep = 2pt]
+\tikzstyle{ann} = [fill=white,font=\scriptsize,inner sep=1pt] 
+
+%//////////////////////    dibuja grafo     ////////////////////////
+
+\draw (10.72,19.31) node[circle,draw, minimum size=6pt] (n0) {0};  %nodo 0
+\draw (10.43,9.47) node[circle,draw, minimum size=6pt] (n1) {1};  %nodo 1
+\draw (7.96,13.19) node[circle,draw, minimum size=6pt] (n2) {2};  %nodo 2
+\draw (7.87,18.29) node[circle,draw, minimum size=6pt] (n3) {3};  %nodo 3
+\draw (9.56,4.35) node[circle,draw, minimum size=6pt] (n4) {4};  %nodo 4
+\draw (16.23,4.19) node[circle,draw, minimum size=6pt] (n5) {5};  %nodo 5
+\draw (1.07,12.49) node[circle,draw, minimum size=6pt] (n6) {6};  %nodo 6
+\draw (19.51,17.12) node[circle,draw, minimum size=6pt] (n7) {7};  %nodo 7
+\draw (0.03,3.66) node[circle,draw, minimum size=6pt] (n8) {8};  %nodo 8
+\draw (1.42,11.26) node[circle,draw, minimum size=6pt] (n9) {9};  %nodo 9
+\draw (16.46,15.94) node[circle,draw, minimum size=6pt] (n10) {10};  %nodo 10
+\draw (6.28,15.90) node[circle,draw, minimum size=6pt] (n11) {11};  %nodo 11
+\draw (14.95,3.88) node[circle,draw, minimum size=6pt] (n12) {12};  %nodo 12
+\draw (3.16,16.28) node[circle,draw, minimum size=6pt] (n13) {13};  %nodo 13
+\draw (10.23,14.21) node[circle,draw, minimum size=6pt] (n14) {14};  %nodo 14
+\draw (12.29,10.05) node[circle,draw, minimum size=6pt] (n15) {15};  %nodo 15
+\draw (16.24,7.18) node[circle,draw, minimum size=6pt] (n16) {16};  %nodo 16
+\draw (17.79,3.93) node[circle,draw, minimum size=6pt] (n17) {17};  %nodo 17
+\draw (9.22,0.59) node[circle,draw, minimum size=6pt] (n18) {18};  %nodo 18
+\draw (4.55,6.46) node[circle,draw, minimum size=6pt] (n19) {19};  %nodo 19
+\draw (8.16,6.78) node[circle,draw, minimum size=6pt] (n20) {20};  %nodo 20
+\draw (1.73,19.34) node[circle,draw, minimum size=6pt] (n21) {21};  %nodo 21
+\draw (2.63,17.56) node[circle,draw, minimum size=6pt] (n22) {22};  %nodo 22
+\draw (6.36,18.38) node[circle,draw, minimum size=6pt] (n23) {23};  %nodo 23
+\draw (11.66,8.91) node[circle,draw, minimum size=6pt] (n24) {24};  %nodo 24
+\draw (10.78,15.97) node[circle,draw, minimum size=6pt] (n25) {25};  %nodo 25
+\draw (14.18,4.06) node[circle,draw, minimum size=6pt] (n26) {26};  %nodo 26
+\draw (5.02,9.43) node[circle,draw, minimum size=6pt] (n27) {27};  %nodo 27
+\draw (17.10,17.25) node[circle,draw, minimum size=6pt] (n28) {28};  %nodo 28
+\draw (5.61,19.93) node[circle,draw, minimum size=6pt] (n29) {29};  %nodo 29
+\draw (10.55,13.05) node[circle,draw, minimum size=6pt] (n30) {30};  %nodo 30
+\draw (7.82,14.96) node[circle,draw, minimum size=6pt] (n31) {31};  %nodo 31
+\draw (16.73,8.77) node[circle,draw, minimum size=6pt] (n32) {32};  %nodo 32
+\draw (5.84,8.21) node[circle,draw, minimum size=6pt] (n33) {33};  %nodo 33
+\draw (7.64,6.60) node[circle,draw, minimum size=6pt] (n34) {34};  %nodo 34
+\draw (14.06,0.31) node[circle,draw, minimum size=6pt] (n35) {35};  %nodo 35
+\draw (3.42,18.73) node[circle,draw, minimum size=6pt] (n36) {36};  %nodo 36
+\draw (7.58,10.91) node[circle,draw, minimum size=6pt] (n37) {37};  %nodo 37
+\draw (3.52,3.82) node[circle,draw, minimum size=6pt] (n38) {38};  %nodo 38
+\draw (12.02,11.26) node[circle,draw, minimum size=6pt] (n39) {39};  %nodo 39
+\draw (8.48,16.46) node[circle,draw, minimum size=6pt] (n40) {40};  %nodo 40
+\draw (19.42,1.74) node[circle,draw, minimum size=6pt] (n41) {41};  %nodo 41
+\draw (4.43,5.69) node[circle,draw, minimum size=6pt] (n42) {42};  %nodo 42
+\draw (1.26,5.51) node[circle,draw, minimum size=6pt] (n43) {43};  %nodo 43
+\draw (16.25,16.47) node[circle,draw, minimum size=6pt] (n44) {44};  %nodo 44
+\draw (2.43,18.49) node[circle,draw, minimum size=6pt] (n45) {45};  %nodo 45
+\draw (8.11,9.20) node[circle,draw, minimum size=6pt] (n46) {46};  %nodo 46
+\draw (4.45,2.66) node[circle,draw, minimum size=6pt] (n47) {47};  %nodo 47
+\draw (3.36,2.45) node[circle,draw, minimum size=6pt] (n48) {48};  %nodo 48
+\draw (11.09,13.74) node[circle,draw, minimum size=6pt] (n49) {49};  %nodo 49
+\draw (3.88,3.99) node[circle,draw, minimum size=6pt] (n50) {50};  %nodo 50
+\draw (12.99,16.43) node[circle,draw, minimum size=6pt] (n51) {51};  %nodo 51
+\draw (2.70,3.92) node[circle,draw, minimum size=6pt] (n52) {52};  %nodo 52
+\draw (19.34,1.32) node[circle,draw, minimum size=6pt] (n53) {53};  %nodo 53
+\draw (19.80,2.64) node[circle,draw, minimum size=6pt] (n54) {54};  %nodo 54
+\draw (3.57,3.12) node[circle,draw, minimum size=6pt] (n55) {55};  %nodo 55
+\draw (4.39,17.75) node[circle,draw, minimum size=6pt] (n56) {56};  %nodo 56
+\draw (16.08,17.31) node[circle,draw, minimum size=6pt] (n57) {57};  %nodo 57
+\draw (6.73,12.44) node[circle,draw, minimum size=6pt] (n58) {58};  %nodo 58
+\draw (18.36,10.99) node[circle,draw, minimum size=6pt] (n59) {59};  %nodo 59
+\draw (0.13,8.30) node[circle,draw, minimum size=6pt] (n60) {60};  %nodo 60
+\draw (12.34,6.38) node[circle,draw, minimum size=6pt] (n61) {61};  %nodo 61
+\draw (9.55,15.28) node[circle,draw, minimum size=6pt] (n62) {62};  %nodo 62
+\draw (18.39,18.11) node[circle,draw, minimum size=6pt] (n63) {63};  %nodo 63
+\draw (0.33,14.89) node[circle,draw, minimum size=6pt] (n64) {64};  %nodo 64
+\draw (8.02,2.93) node[circle,draw, minimum size=6pt] (n65) {65};  %nodo 65
+\draw (3.86,8.03) node[circle,draw, minimum size=6pt] (n66) {66};  %nodo 66
+\draw (7.30,10.48) node[circle,draw, minimum size=6pt] (n67) {67};  %nodo 67
+\draw (11.28,5.01) node[circle,draw, minimum size=6pt] (n68) {68};  %nodo 68
+\draw (7.25,12.17) node[circle,draw, minimum size=6pt] (n69) {69};  %nodo 69
+\draw (18.65,4.95) node[circle,draw, minimum size=6pt] (n70) {70};  %nodo 70
+\draw (1.57,15.38) node[circle,draw, minimum size=6pt] (n71) {71};  %nodo 71
+\draw (8.05,19.54) node[circle,draw, minimum size=6pt] (n72) {72};  %nodo 72
+\draw (4.20,10.05) node[circle,draw, minimum size=6pt] (n73) {73};  %nodo 73
+\draw (10.90,14.99) node[circle,draw, minimum size=6pt] (n74) {74};  %nodo 74
+\draw (7.91,4.64) node[circle,draw, minimum size=6pt] (n75) {75};  %nodo 75
+\draw (1.38,8.75) node[circle,draw, minimum size=6pt] (n76) {76};  %nodo 76
+\draw (2.15,8.03) node[circle,draw, minimum size=6pt] (n77) {77};  %nodo 77
+\draw (16.30,11.06) node[circle,draw, minimum size=6pt] (n78) {78};  %nodo 78
+\draw (1.12,18.12) node[circle,draw, minimum size=6pt] (n79) {79};  %nodo 79
+\draw (18.00,7.52) node[circle,draw, minimum size=6pt] (n80) {80};  %nodo 80
+\draw (0.75,2.82) node[circle,draw, minimum size=6pt] (n81) {81};  %nodo 81
+\draw (0.67,1.21) node[circle,draw, minimum size=6pt] (n82) {82};  %nodo 82
+\draw (15.36,19.54) node[circle,draw, minimum size=6pt] (n83) {83};  %nodo 83
+\draw (10.28,7.12) node[circle,draw, minimum size=6pt] (n84) {84};  %nodo 84
+\draw (2.80,8.92) node[circle,draw, minimum size=6pt] (n85) {85};  %nodo 85
+\draw (17.72,14.49) node[circle,draw, minimum size=6pt] (n86) {86};  %nodo 86
+\draw (5.93,2.45) node[circle,draw, minimum size=6pt] (n87) {87};  %nodo 87
+\draw (19.07,5.77) node[circle,draw, minimum size=6pt] (n88) {88};  %nodo 88
+\draw (16.07,13.47) node[circle,draw, minimum size=6pt] (n89) {89};  %nodo 89
+\draw (14.90,3.82) node[circle,draw, minimum size=6pt] (n90) {90};  %nodo 90
+\draw (10.44,5.58) node[circle,draw, minimum size=6pt] (n91) {91};  %nodo 91
+\draw (6.87,10.29) node[circle,draw, minimum size=6pt] (n92) {92};  %nodo 92
+\draw (15.96,9.17) node[circle,draw, minimum size=6pt] (n93) {93};  %nodo 93
+\draw (12.47,4.15) node[circle,draw, minimum size=6pt] (n94) {94};  %nodo 94
+\draw (5.33,16.28) node[circle,draw, minimum size=6pt] (n95) {95};  %nodo 95
+\draw (2.89,5.56) node[circle,draw, minimum size=6pt] (n96) {96};  %nodo 96
+\draw (17.84,1.07) node[circle,draw, minimum size=6pt] (n97) {97};  %nodo 97
+\draw (8.30,3.53) node[circle,draw, minimum size=6pt] (n98) {98};  %nodo 98
+\draw (6.04,10.82) node[circle,draw, minimum size=6pt] (n99) {99};  %nodo 99
+\draw (n0) edge  (n83); %arco (0,83)
+\draw (n1) edge  (n72); %arco (1,72)
+\draw (n2) edge  (n18); %arco (2,18)
+\draw (n3) edge  (n74); %arco (3,74)
+\draw (n4) edge  (n42); %arco (4,42)
+\draw (n5) edge  (n74); %arco (5,74)
+\draw (n6) edge  (n74); %arco (6,74)
+\draw (n6) edge  (n7); %arco (6,7)
+\draw (n6) edge  (n30); %arco (6,30)
+\draw (n6) edge  (n60); %arco (6,60)
+\draw (n7) edge  (n53); %arco (7,53)
+\draw (n8) edge  (n2); %arco (8,2)
+\draw (n9) edge  (n27); %arco (9,27)
+\draw (n9) edge  (n55); %arco (9,55)
+\draw (n10) edge  (n18); %arco (10,18)
+\draw (n10) edge  (n5); %arco (10,5)
+\draw (n11) edge  (n30); %arco (11,30)
+\draw (n11) edge  (n96); %arco (11,96)
+\draw (n12) edge  (n70); %arco (12,70)
+\draw (n12) edge  (n40); %arco (12,40)
+\draw (n12) edge  (n55); %arco (12,55)
+\draw (n13) edge  (n14); %arco (13,14)
+\draw (n14) edge  (n66); %arco (14,66)
+\draw (n14) edge  (n50); %arco (14,50)
+\draw (n15) edge  (n75); %arco (15,75)
+\draw (n16) edge  (n6); %arco (16,6)
+\draw (n16) edge  (n34); %arco (16,34)
+\draw (n17) edge  (n98); %arco (17,98)
+\draw (n18) edge  (n14); %arco (18,14)
+\draw (n19) edge  (n2); %arco (19,2)
+\draw (n20) edge  (n93); %arco (20,93)
+\draw (n21) edge  (n7); %arco (21,7)
+\draw (n22) edge  (n49); %arco (22,49)
+\draw (n22) edge  (n24); %arco (22,24)
+\draw (n23) edge  (n38); %arco (23,38)
+\draw (n23) edge  (n10); %arco (23,10)
+\draw (n24) edge  (n42); %arco (24,42)
+\draw (n25) edge  (n84); %arco (25,84)
+\draw (n25) edge  (n5); %arco (25,5)
+\draw (n25) edge  (n56); %arco (25,56)
+\draw (n25) edge  (n95); %arco (25,95)
+\draw (n25) edge  (n45); %arco (25,45)
+\draw (n26) edge  (n5); %arco (26,5)
+\draw (n26) edge  (n40); %arco (26,40)
+\draw (n27) edge  (n42); %arco (27,42)
+\draw (n28) edge  (n66); %arco (28,66)
+\draw (n28) edge  (n23); %arco (28,23)
+\draw (n29) edge  (n98); %arco (29,98)
+\draw (n30) edge  (n63); %arco (30,63)
+\draw (n30) edge  (n29); %arco (30,29)
+\draw (n31) edge  (n60); %arco (31,60)
+\draw (n31) edge  (n11); %arco (31,11)
+\draw (n32) edge  (n25); %arco (32,25)
+\draw (n33) edge  (n66); %arco (33,66)
+\draw (n33) edge  (n31); %arco (33,31)
+\draw (n34) edge  (n4); %arco (34,4)
+\draw (n35) edge  (n36); %arco (35,36)
+\draw (n36) edge  (n3); %arco (36,3)
+\draw (n36) edge  (n79); %arco (36,79)
+\draw (n37) edge  (n25); %arco (37,25)
+\draw (n38) edge  (n15); %arco (38,15)
+\draw (n38) edge  (n81); %arco (38,81)
+\draw (n38) edge  (n77); %arco (38,77)
+\draw (n38) edge  (n75); %arco (38,75)
+\draw (n38) edge  (n92); %arco (38,92)
+\draw (n38) edge  (n54); %arco (38,54)
+\draw (n38) edge  (n68); %arco (38,68)
+\draw (n39) edge  (n86); %arco (39,86)
+\draw (n39) edge  (n78); %arco (39,78)
+\draw (n40) edge  (n74); %arco (40,74)
+\draw (n41) edge  (n57); %arco (41,57)
+\draw (n42) edge  (n21); %arco (42,21)
+\draw (n43) edge  (n65); %arco (43,65)
+\draw (n43) edge  (n98); %arco (43,98)
+\draw (n44) edge  (n1); %arco (44,1)
+\draw (n44) edge  (n59); %arco (44,59)
+\draw (n45) edge  (n3); %arco (45,3)
+\draw (n46) edge  (n82); %arco (46,82)
+\draw (n46) edge  (n62); %arco (46,62)
+\draw (n46) edge  (n63); %arco (46,63)
+\draw (n46) edge  (n90); %arco (46,90)
+\draw (n47) edge  (n95); %arco (47,95)
+\draw (n48) edge  (n40); %arco (48,40)
+\draw (n48) edge  (n8); %arco (48,8)
+\draw (n49) edge  (n28); %arco (49,28)
+\draw (n49) edge  (n71); %arco (49,71)
+\draw (n49) edge  (n63); %arco (49,63)
+\draw (n50) edge  (n43); %arco (50,43)
+\draw (n50) edge  (n5); %arco (50,5)
+\draw (n51) edge  (n83); %arco (51,83)
+\draw (n51) edge  (n56); %arco (51,56)
+\draw (n52) edge  (n0); %arco (52,0)
+\draw (n52) edge  (n81); %arco (52,81)
+\draw (n53) edge  (n89); %arco (53,89)
+\draw (n54) edge  (n74); %arco (54,74)
+\draw (n54) edge  (n38); %arco (54,38)
+\draw (n55) edge  (n29); %arco (55,29)
+\draw (n56) edge  (n44); %arco (56,44)
+\draw (n56) edge  (n66); %arco (56,66)
+\draw (n56) edge  (n51); %arco (56,51)
+\draw (n56) edge  (n0); %arco (56,0)
+\draw (n56) edge  (n35); %arco (56,35)
+\draw (n57) edge  (n83); %arco (57,83)
+\draw (n57) edge  (n63); %arco (57,63)
+\draw (n58) edge  (n11); %arco (58,11)
+\draw (n59) edge  (n94); %arco (59,94)
+\draw (n59) edge  (n70); %arco (59,70)
+\draw (n59) edge  (n71); %arco (59,71)
+\draw (n59) edge  (n96); %arco (59,96)
+\draw (n60) edge  (n5); %arco (60,5)
+\draw (n60) edge  (n88); %arco (60,88)
+\draw (n61) edge  (n80); %arco (61,80)
+\draw (n61) edge  (n58); %arco (61,58)
+\draw (n62) edge  (n11); %arco (62,11)
+\draw (n62) edge  (n77); %arco (62,77)
+\draw (n63) edge  (n1); %arco (63,1)
+\draw (n64) edge  (n84); %arco (64,84)
+\draw (n65) edge  (n3); %arco (65,3)
+\draw (n66) edge  (n22); %arco (66,22)
+\draw (n67) edge  (n45); %arco (67,45)
+\draw (n68) edge  (n45); %arco (68,45)
+\draw (n69) edge  (n56); %arco (69,56)
+\draw (n69) edge  (n61); %arco (69,61)
+\draw (n70) edge  (n28); %arco (70,28)
+\draw (n71) edge  (n16); %arco (71,16)
+\draw (n72) edge  (n87); %arco (72,87)
+\draw (n73) edge  (n11); %arco (73,11)
+\draw (n74) edge  (n44); %arco (74,44)
+\draw (n75) edge  (n4); %arco (75,4)
+\draw (n76) edge  (n43); %arco (76,43)
+\draw (n77) edge  (n60); %arco (77,60)
+\draw (n78) edge  (n53); %arco (78,53)
+\draw (n79) edge  (n55); %arco (79,55)
+\draw (n80) edge  (n26); %arco (80,26)
+\draw (n80) edge  (n61); %arco (80,61)
+\draw (n81) edge  (n11); %arco (81,11)
+\draw (n82) edge  (n33); %arco (82,33)
+\draw (n83) edge  (n65); %arco (83,65)
+\draw (n84) edge  (n32); %arco (84,32)
+\draw (n85) edge  (n34); %arco (85,34)
+\draw (n86) edge  (n12); %arco (86,12)
+\draw (n86) edge  (n43); %arco (86,43)
+\draw (n87) edge  (n4); %arco (87,4)
+\draw (n88) edge  (n68); %arco (88,68)
+\draw (n89) edge  (n60); %arco (89,60)
+\draw (n90) edge  (n0); %arco (90,0)
+\draw (n91) edge  (n42); %arco (91,42)
+\draw (n92) edge  (n17); %arco (92,17)
+\draw (n93) edge  (n74); %arco (93,74)
+\draw (n94) edge  (n81); %arco (94,81)
+\draw (n95) edge  (n43); %arco (95,43)
+\draw (n95) edge  (n21); %arco (95,21)
+\draw (n96) edge  (n68); %arco (96,68)
+\draw (n96) edge  (n53); %arco (96,53)
+\draw (n97) edge  (n30); %arco (97,30)
+\draw (n98) edge  (n91); %arco (98,91)
+\draw (n99) edge  (n16); %arco (99,16)
+\end{tikzpicture}
+\end{document}
