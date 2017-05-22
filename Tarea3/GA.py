@@ -110,4 +110,4 @@ def GA3SAT(instancia,n,N=100,G=20,Pc=0.5,Pm=0.1):
        
 
 
-GA3SAT("InstanciasTripleSAT/instancia_tripleSAT(False,False)990-1175.txt",1175,300,100)
+GA3SAT("instancia_tripleSAT(False,False)990-1175.txt",1175,300,100)
