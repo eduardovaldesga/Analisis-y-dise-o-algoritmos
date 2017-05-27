@@ -16,7 +16,7 @@ for numClaus in range(10,2000,300):
     for numVar in range(10,2000,300):
 #        print(numClaus,numVar)
         instance.genera_instancia_tripleSAT(numClaus,numVar,"%d-%d"%(numClaus,numVar),True,True)
-        time,obj=GA3SAT("InstanciasTripleSAT/instancia_tripleSAT(True,True)%d-%d.txt"%(numClaus,numVar),numVar)   
+        time,obj=GA3SAT("instancia_tripleSAT(True,True)%d-%d.txt"%(numClaus,numVar),numVar)   
 #        print(numClaus,numVar,time,obj)
         temp1=tiempo.get("%.2f"%float(numClaus/numVar),[])
         if len(temp1)==0:
