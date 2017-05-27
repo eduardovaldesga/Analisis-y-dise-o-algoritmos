@@ -63,10 +63,10 @@ def clausulaFalseDNF(numVariables, asign): #^^^
 def genera_instancia_tripleSAT(numLineas,numVariables,nomInstancia,cnf,true):
     'genera una instancia para cnf(dnf) cuya respuesta es true (false)'
     'con numLineas clausulas y nuVariables variables distintas'
-    assign=open("InstanciasTripleSAT/asignacion_tripleSAT("+str(cnf)+","+str(true)+")"+str(nomInstancia)+".txt",'w')    
+    assign=open("asignacion_tripleSAT("+str(cnf)+","+str(true)+")"+str(nomInstancia)+".txt",'w')    
     A=set(['x'+str(v) for v in sample(range(1,numVariables+1),randint(1,numVariables))])
     print('\n'.join(list(A)),file=assign)
-    instance=open("InstanciasTripleSAT/instancia_tripleSAT("+str(cnf)+","+str(true)+")"+str(nomInstancia)+".txt",'w')
+    instance=open("instancia_tripleSAT("+str(cnf)+","+str(true)+")"+str(nomInstancia)+".txt",'w')
     if cnf and true: 
         clausulas=[clausulaTrueCNF(numVariables,A) for i in range(numLineas)]
     elif cnf and not true:
